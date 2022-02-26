@@ -1,19 +1,7 @@
 .navigation {
   height: 55px;
 }
-.brand {
-  position: absolute;
-  padding-left: 20px;
-  float: left;
-  line-height: 55px;
-  text-transform: uppercase;
-  font-size: 1.4em;
-}
-.brand a,
-.brand a:visited {
-  color: var(--primary-color);
-  text-decoration: none;
-}
+
 .nav-container {
   max-width: 1000px;
   margin: 0 auto;
@@ -30,20 +18,32 @@ nav ul li {
   float: left;
   position: relative;
 }
+
+nav ul li a:hover {
+  opacity: 0.8;
+  transition: all ease-in-out 200ms;
+}
+
 nav ul li a,
 nav ul li a:visited {
   display: block;
   padding: 0 20px;
   line-height: 55px;
-  color: var(--primary-color);
   text-decoration: none;
   border-radius: 4px;
+  color: var(--primary-color);
 }
 
+nav ul li ul li a,
+nav ul li ul li a:visited {
+  color: var(--primary-color);
+}
+
+/*
 nav ul li a:hover,
 nav ul li a:visited:hover {
   color: var(--primary-color);
-}
+}*/
 
 nav ul li a:not(:only-child):after,
 nav ul li a:visited:not(:only-child):after {
@@ -62,8 +62,9 @@ nav ul li a:visited:not(:only-child):after {
 }
 
 .navbar-dropdown li:hover {
+  transition: all ease-in 200ms;
   border-radius: 8px;
-  background-color: #dfdfdf;
+  background-color: #ececec;
 }
 
 .navbar-dropdown {
@@ -87,6 +88,7 @@ nav ul li a:visited:not(:only-child):after {
 
 .custom-dropdown:hover ul {
   display: block;
+  transition: all ease-in-out 200ms;
 }
 
 @media only screen and (max-width: 700px) {
@@ -108,6 +110,7 @@ nav ul li a:visited:not(:only-child):after {
     line-height: 20px;
     background: #fff;
   }
+
   nav ul li ul li a {
     padding-left: 30px;
   }
@@ -133,6 +136,11 @@ nav ul li a:visited:not(:only-child):after {
 
 .nav-list.active {
   display: block !important;
+}
+
+.nav-list.active li a {
+  display: block !important;
+  color: var(--primary-color);
 }
 
 .navbar-toggle {

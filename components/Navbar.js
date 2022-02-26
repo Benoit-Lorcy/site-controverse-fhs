@@ -1,31 +1,55 @@
 import React, { useState } from "react";
+import { useRouter } from "next/router";
 
 const Navbar = () => {
     const [menu, setMenu] = useState(false)
+    const router = useRouter();
 
     const handleClick = () => {
         setMenu(!menu)
+        console.log(menu)
     }
 
     return (
-        <section class="navigation">
-            <div class="nav-container">
-                <div class="brand">
+        <section className="navigation">
+          {
+            router.asPath === "/" || router.asPath[1] === "#" ?
+            <style>{`
+              nav ul li a,
+              nav ul li a:visited {
+                color: white;
+              }
+
+              .navbar-toggle span,
+              .navbar-toggle span:before,
+              .navbar-toggle span:after {
+                background: white;
+              }
+
+              .navbar-toggle.active span:before,
+              .navbar-toggle.active span:after {
+                background: var(--primary-color);;
+              }
+            `}
+            </style> : "" 
+          }
+            <div className="nav-container">
+                <div className="brand">
                 </div>
                 <nav>
-                <div class="nav-mobile" onClick={handleClick}>
-                    <a className={menu ? "navbar-toggle active" : "navbar-toggle"} href="#!" ><span></span></a>
+                <div className="nav-mobile" onClick={handleClick}>
+                    <div className={menu ? "navbar-toggle active" : "navbar-toggle"} href="#!" ><span></span></div>
                 </div>
-                <ul class={menu ? "nav-list active" : "nav-list"}>
+                <ul className={menu ? "nav-list active" : "nav-list"}>
                     <li>
                       <a href="#!">Acceuil</a>
                     </li>
                     <li>
                       <a href="#!">Historique</a>
                     </li>
-                    <li class="custom-dropdown">
+                    <li className="custom-dropdown">
                     <a href="#!">Enjeux</a>
-                    <ul class="navbar-dropdown">
+                    <ul className="navbar-dropdown">
                         <li>
                         <a href="#!">Sass</a>
                         </li>
@@ -40,9 +64,9 @@ const Navbar = () => {
                     <li>
                     <a href="#!">Acteurs</a>
                     </li>
-                    <li class="custom-dropdown">
+                    <li className="custom-dropdown">
                     <a href="#!">Interviews</a>
-                    <ul class="navbar-dropdown">
+                    <ul className="navbar-dropdown">
                         <li>
                         <a href="#!">Sass</a>
                         </li>
@@ -54,9 +78,9 @@ const Navbar = () => {
                         </li>
                     </ul>
                     </li>
-                    <li class="custom-dropdown">
+                    <li className="custom-dropdown">
                     <a href="#!">A propos</a>
-                    <ul class="navbar-dropdown ">
+                    <ul className="navbar-dropdown ">
                         <li>
                         <a href="#!">Sass</a>
                         </li>
@@ -79,34 +103,20 @@ const Navbar = () => {
 
 export default Navbar;
 
-/*	(function($) { 
-  $(function() { 
-
-    //  open and close nav 
-    $('#navbar-toggle').click(function() {
-      $('nav ul').slideToggle();
-    });
+/*
+-> quand on est sur la page principale -> navbar blanc
+-> quand le menue est actif -> navbar pas blanc
+-> sur toutes les autres pages navbar pas blanc
 
 
-    // Hamburger toggle
-    $('#navbar-toggle').on('click', function() {
-      this.classList.toggle('active');
-    });
 
 
-    // If a link has a dropdown, add sub menu toggle.
-    $('nav ul li a:not(:only-child)').click(function(e) {
-      $(this).siblings('.navbar-dropdown').slideToggle("slow");
-
-      // Close dropdown when select another dropdown
-      $('.navbar-dropdown').not($(this).siblings()).hide("slow");
-      e.stopPropagation();
-    });
 
 
-    // Click outside the dropdown will remove the dropdown class
-    $('html').click(function() {
-      $('.navbar-dropdown').hide();
-    });
-  }); 
-})(jQuery); */
+
+
+
+
+
+
+*/
