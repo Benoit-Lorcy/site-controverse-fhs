@@ -2,19 +2,19 @@ import React, { useState } from "react";
 import { useRouter } from "next/router";
 
 const Navbar = () => {
-    const [menu, setMenu] = useState(false)
-    const router = useRouter();
+  const [menu, setMenu] = useState(false);
+  const router = useRouter();
 
-    const handleClick = () => {
-        setMenu(!menu)
-        console.log(menu)
-    }
+  const handleClick = () => {
+    setMenu(!menu);
+    console.log(menu);
+  };
 
-    return (
-        <section className="navigation">
-          {
-            router.asPath === "/" || router.asPath[1] === "#" ?
-            <style>{`
+  return (
+    <section className="navigation">
+      {router.asPath === "/" || router.asPath[1] === "#" ? (
+        <style>
+          {`
               nav ul li a,
               nav ul li a:visited {
                 color: white;
@@ -31,75 +31,65 @@ const Navbar = () => {
                 background: var(--primary-color);;
               }
             `}
-            </style> : "" 
-          }
-            <div className="nav-container">
-                <div className="brand">
-                </div>
-                <nav>
-                <div className="nav-mobile" onClick={handleClick}>
-                    <div className={menu ? "navbar-toggle active" : "navbar-toggle"} href="#!" ><span></span></div>
-                </div>
-                <ul className={menu ? "nav-list active" : "nav-list"}>
-                    <li>
-                      <a href="#!">Acceuil</a>
-                    </li>
-                    <li>
-                      <a href="#!">Historique</a>
-                    </li>
-                    <li className="custom-dropdown">
-                    <a href="#!">Enjeux</a>
-                    <ul className="navbar-dropdown">
-                        <li>
-                        <a href="#!">Sass</a>
-                        </li>
-                        <li>
-                        <a href="#!">Less</a>
-                        </li>
-                        <li>
-                        <a href="#!">Stylus</a>
-                        </li>
-                    </ul>
-                    </li>
-                    <li>
-                    <a href="#!">Acteurs</a>
-                    </li>
-                    <li className="custom-dropdown">
-                    <a href="#!">Interviews</a>
-                    <ul className="navbar-dropdown">
-                        <li>
-                        <a href="#!">Sass</a>
-                        </li>
-                        <li>
-                        <a href="#!">Less</a>
-                        </li>
-                        <li>
-                        <a href="#!">Stylus</a>
-                        </li>
-                    </ul>
-                    </li>
-                    <li className="custom-dropdown">
-                    <a href="#!">A propos</a>
-                    <ul className="navbar-dropdown ">
-                        <li>
-                        <a href="#!">Sass</a>
-                        </li>
-                        <li>
-                        <a href="#!">Less</a>
-                        </li>
-                        <li>
-                        <a href="#!">Stylus</a>
-                        </li>
-                    </ul>
-                    </li>
-
-                </ul>
-                </nav>
+        </style>
+      ) : (
+        ""
+      )}
+      <div className="nav-container">
+        <div className="brand"></div>
+        <nav>
+          <div className="nav-mobile" onClick={handleClick}>
+            <div className={menu ? "navbar-toggle active" : "navbar-toggle"} href="#!">
+              <span></span>
             </div>
-        </section>
-    )
-}
-
+          </div>
+          <ul className={menu ? "nav-list active" : "nav-list"}>
+            <li>
+              <a href="/">Acceuil</a>
+            </li>
+            <li>
+              <a href="/historique">Historique</a>
+            </li>
+            <li className="custom-dropdown">
+              <a href="/enjeux">Enjeux</a>
+            </li>
+            <li>
+              <a href="/acteurs">Acteurs</a>
+            </li>
+            <li className="custom-dropdown">
+              <a href="/interviews">Interviews</a>
+              <ul className="navbar-dropdown">
+                <li>
+                  <a href="/interviews#tiphaine_elombo">Tiphaine Elombo</a>
+                </li>
+                <li>
+                  <a href="/interviews#marylene_letourneur">Marylène Letourneur</a>
+                </li>
+                <li>
+                  <a href="/interviews#sebastien_f">Sébastien F.</a>
+                </li>
+              </ul>
+            </li>
+            <li className="custom-dropdown">
+              <a href="/a-propos">A propos</a>
+              <ul className="navbar-dropdown ">
+                <li>
+                  <a href="/a-propos#equipe">L’équipe</a>
+                </li>
+                <li>
+                  <a href="/a-propos#who">Qui sommes nous ?</a>
+                </li>
+                <li>
+                  <a href="/a-propos#sources">Nos sources</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+  );
+};
 
 export default Navbar;
 
