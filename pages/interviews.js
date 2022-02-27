@@ -3,7 +3,7 @@ export default function Interviews() {
     <>
       <section className="section">
         <div className="container">
-          <h1 style={{ textAlign: "center" }}>Enjeux</h1>
+          <h1 style={{ textAlign: "center" }}>Interviews</h1>
         </div>
       </section>
     </>

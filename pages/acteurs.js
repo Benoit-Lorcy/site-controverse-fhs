@@ -60,7 +60,7 @@ export default function Acteurs() {
           <h2>Carte Mentale</h2>
           <iframe
             src="https://embed.kumu.io/02857227bfe29cf35ed5ebd3a2417642"
-            width="800"
+            width="940"
             height="600"
             frameborder="0"
           ></iframe>

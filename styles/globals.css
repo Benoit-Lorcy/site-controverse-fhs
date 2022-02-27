@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url('https://fonts.googleapis.com/css2?family=Alike+Angular&family=Asul&family=Concert+One&family=Eczar&family=Fruktur&family=Kavoon&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&family=Neuton&family=Pacifico&family=Space+Mono&family=Tillana&family=Work+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700&display=swap');
 
 :root {
@@ -13,7 +13,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: Montserrat;
-  font-style: normal;
+  font-weight: 600;
   font-size: 16px;
   line-height: 175.7%;
   background-color: var(--bg-color);
@@ -49,7 +49,7 @@ h1{
   /* not black */
   color: var(--primary-color);
 
-  margin: 0px 0px 0px 0px;
+  margin-bottom: 60px;
 }
 
 h2{
@@ -423,6 +423,7 @@ audio{
 
 .card-container-acteur{
   display: flex;
+  justify-content: center;
 }
 
 .card-acteur {
@@ -436,12 +437,16 @@ audio{
   position: relative;
 }
 
-@media screen and (max-width: 800px) {
+@media only screen and (max-width: 1280px) {
+  .card-container-acteur{
+    flex-wrap: wrap;
+  }
   .card-acteur {
     width: calc(50% - 2rem);
   }
 }
-@media screen and (max-width: 500px) {
+
+@media screen and (max-width: 600px) {
   .card-acteur {
     width: 100%;
   }
@@ -521,4 +526,127 @@ iframe{
   display: block; 
   border-radius: 4px;
   box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.1)
+}
+
+
+/* enjeux */
+.enjeux-flexbox{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.enjeux-item{
+  box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.1);
+  height: 300px;
+  width: calc(50% - 30px);
+  margin: 15px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all ease 200ms;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.enjeux-item h2{
+  text-shadow: #0D1929;
+  color: white;
+  margin: 0px;
+}
+
+.enjeux-item:hover{
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 800px) {
+  .enjeux-item {
+    width: 100%;
+  }
+}
+
+.overlay{
+  top:0px;
+  left: 0px;
+  width: 0%;
+  height: 0%;
+  position: fixed; /*a changer*/
+  overflow-y: scroll;
+  opacity: 0;
+  transition: opacity 200ms ease;  
+}
+
+.overlay.active{
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  /*transform:translate(0);*/
+  display: block;
+}
+
+.overlay-background{
+  position: fixed;
+  width: 0%;
+  height: 0%;
+  background-color: #1c1f258c;
+  transition: opacity 200ms ease;  
+}
+
+.overlay-background.active{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #1c1f258c;
+}
+
+.container.overlayed{
+  background-color: var(--bg-color);
+  border-radius: 4px;
+  padding: 60px;
+  margin-bottom: 100px;
+  top: 0;
+  position: relative;
+}
+
+.container.overlayed img{
+  cursor: pointer;
+  top: 30px;
+  right: 30px;
+  position: absolute;
+}
+
+.container.overlayed p{
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.container.overlayed audio{
+  margin: 30px 0px;
+}
+
+.container.overlayed .quote{
+  font-family: Heebo;
+  font-style: italic;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  /* not black */
+  text-align: center;
+  color: var(--primary-color);  
+}
+
+@media screen and (max-width: 600px) {
+  .container.overlayed{
+    background-color: var(--bg-color);
+    border-radius: 4px;
+    padding: 30px;
+  }
+}
+
+.navbar-toggle.active.overlay{
+  right: 0;
 }
