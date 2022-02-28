@@ -105,7 +105,7 @@ export default function MentionsLegales() {
             </p>
             <p>‍</p>
             <h2>Responsabilité quant au contenu</h2>
-            <p>Tous les informations de ce site sont à titre informatif et non contractuel.</p>
+            <p>Toutes les informations de ce site sont à titre informatif et non contractuel.</p>
             <p>
               controverse.info.gf ne saurait être tenu pour responsable de la variation des résultats de ses services
               par rapport à ceux envisagés sur le site.
