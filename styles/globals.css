@@ -93,6 +93,11 @@ h4{
 audio{
   width: 100%;
   border-radius: 4px;
+  box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+audio{
+  background-color: white;
 }
 
 .container{
@@ -649,4 +654,59 @@ iframe{
 
 .navbar-toggle.active.overlay{
   right: 0;
+}
+
+
+/* mentions légales */
+.list li{
+  color: var(--secondary-color);
+}
+
+.format-mentions p{
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+
+/*interview*/
+.interview-card{
+  display: flex;
+  background-color: white;
+  border-radius: 4px;
+  margin-bottom: 30px;
+  padding: 20px;
+  box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.interview-card ul{
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 800px) {
+  .interview-card{
+    flex-direction: column;
+  }
+}
+
+.interview-card ul li{
+  margin: 5px;
+}
+
+
+.interview-card-image{
+  cursor: pointer!important;
+  top: 0!important;
+  left: 0!important;
+  position: relative!important;
+}
+
+
+/* audio */
+
+
+audio::-webkit-media-controls-panel {
+  background-color: white;
 }

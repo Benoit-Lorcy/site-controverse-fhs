@@ -71,12 +71,14 @@ export default function Apropos() {
           <ul className="sources">
             <li>
               <a href="https://www.novethic.fr/actualite/gouvernance-dentreprise/entreprises-controversees/isr-rse/apres-le-couac-sur-les-vaccins-sanofi-va-relocaliser-une-partie-de-sa-production-en-france-148678.html">
-                https://www.novethic.fr/actualite/gouvernance-dentreprise/entreprises-controversees/isr-rse/apres-le-couac-sur-les-vaccins-sanofi-va-relocaliser-une-partie-de-sa-production-en-france-148678.html
+                Fabre, M., 2020, “Sanofi et l’État s’associent pour relocaliser une partie de la production de
+                médicaments et vaccins en France”
               </a>
             </li>
             <li>
               <a href="https://www.sudouest.fr/2020/09/15/delocalisation-hausse-de-la-demande-prix-quelles-sont-les-principales-causes-de-penuries-de-medicaments-7848718-4696.php?nic">
-                https://www.sudouest.fr/2020/09/15/delocalisation-hausse-de-la-demande-prix-quelles-sont-les-principales-causes-de-penuries-de-medicaments-7848718-4696.php?nic
+                T., A., 2020, “Délocalisation, hausse de la demande, prix : quelles sont les principales causes de
+                pénuries de médicaments ?”
               </a>
             </li>
             <li>
@@ -84,7 +86,7 @@ export default function Apropos() {
                 href="
 https://app.brief.me/article/2020-04-18-10403-la-delocalisation-de-la-fabrication-des-medicaments"
               >
-                https://app.brief.me/article/2020-04-18-10403-la-delocalisation-de-la-fabrication-des-medicaments
+                Brief.me, 2020, “La délocalisation de la fabrication des médicaments”
               </a>
             </li>
             <li>
@@ -92,17 +94,18 @@ https://app.brief.me/article/2020-04-18-10403-la-delocalisation-de-la-fabricatio
                 href="
 https://www.institutmolinari.org/2020/04/13/pas-de-relocalisations-sans-allegements-fiscaux-et-reglementaires/"
               >
-                https://www.institutmolinari.org/2020/04/13/pas-de-relocalisations-sans-allegements-fiscaux-et-reglementaires/
+                Marques, N., 2020, “Pas de relocalisations sans allègements fiscaux et réglementaires”
               </a>
             </li>
             <li>
               <a href="https://www.quechoisir.org/action-ufc-que-choisir-penuries-de-medicaments-devant-la-responsabilite-criante-des-laboratoires-les-pouvoirs-publics-doivent-sortir-de-leur-complaisance-n84943/">
-                https://www.quechoisir.org/action-ufc-que-choisir-penuries-de-medicaments-devant-la-responsabilite-criante-des-laboratoires-les-pouvoirs-publics-doivent-sortir-de-leur-complaisance-n84943/
+                Quechoisir, 2020, “Pénuries de médicaments : Devant la responsabilité criante des laboratoires, les
+                pouvoirs publics doivent sortir de leur complaisance”
               </a>
             </li>
             <li>
               <a href="https://www.acadpharm.org/dos_public/2018_06_20_AnP_RAPPORT_INDISPONIBILITE_MED_VF1.pdf ">
-                https://www.acadpharm.org/dos_public/2018_06_20_AnP_RAPPORT_INDISPONIBILITE_MED_VF1.pdf{" "}
+                Conseil de l’Académie nationale de Pharmacie, 2018, “Indisponibilité des médicaments”
               </a>
             </li>
           </ul>

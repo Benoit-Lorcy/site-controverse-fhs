@@ -60,13 +60,13 @@ const Navbar = () => {
               <a href="/interviews">Interviews</a>
               <ul className="navbar-dropdown">
                 <li>
-                  <a href="/interviews#tiphaine_elombo">Tiphaine Elombo</a>
+                  <a href="/interviews#tiphaineElombo">Tiphaine Elombo</a>
                 </li>
                 <li>
-                  <a href="/interviews#marylene_letourneur">Marylène Letourneur</a>
+                  <a href="/interviews#maryleneLetourneur">Marylène Letourneur</a>
                 </li>
                 <li>
-                  <a href="/interviews#sebastien_f">Sébastien F.</a>
+                  <a href="/interviews#sebastienF">Sébastien F.</a>
                 </li>
               </ul>
             </li>

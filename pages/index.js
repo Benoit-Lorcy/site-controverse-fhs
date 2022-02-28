@@ -51,7 +51,7 @@ export default function Home() {
               </div>
               <h3>Historique</h3>
               <p>Quelle était la situation il y a plusieurs années et comment évolue-t-elle ?</p>
-              <a className="card-button" href="#!">
+              <a className="card-button" href="/historique">
                 En savoir plus
               </a>
             </div>
@@ -61,7 +61,7 @@ export default function Home() {
               </div>
               <h3>Acteurs</h3>
               <p>Quelles sont les différentes entreprises et institutions impliquées ?</p>
-              <a className="card-button" href="#!">
+              <a className="card-button" href="/acteurs">
                 En savoir plus
               </a>
             </div>
@@ -71,7 +71,7 @@ export default function Home() {
               </div>
               <h3>Enjeux</h3>
               <p>Quels sont les enjeux de ces délocalisations et leurs conséquences ?</p>
-              <a className="card-button" href="#!">
+              <a className="card-button" href="/enjeux">
                 En savoir plus
               </a>
             </div>
@@ -89,7 +89,7 @@ export default function Home() {
               </div>
               <h3>Tiphaine Elombo</h3>
               <p>Pharmacienne et ingénieure chimiste chez EUROAPI {"\n"}</p>
-              <a className="card-button" href="#!">
+              <a className="card-button" href="/interviews#tiphaineElombo">
                 En savoir plus
               </a>
             </div>
@@ -99,7 +99,7 @@ export default function Home() {
               </div>
               <h3>Marylène Letourneur</h3>
               <p>Pharmacienne hospitalière, dans la ville de Saint-Brieuc {"\n"}</p>
-              <a className="card-button" href="#!">
+              <a className="card-button" href="/interviews#maryleneLetourneur">
                 En savoir plus
               </a>
             </div>
@@ -109,7 +109,7 @@ export default function Home() {
               </div>
               <h3>Sébastien F.</h3>
               <p>Pharmacien adjoint de la pharmacie Blanchard Serarl, dans la ville de Brest</p>
-              <a className="card-button" href="#!">
+              <a className="card-button" href="/interviews#sebastienF">
                 En savoir plus
               </a>
             </div>

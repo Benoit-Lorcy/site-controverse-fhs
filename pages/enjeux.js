@@ -68,7 +68,7 @@ export default function Enjeux() {
         Dans notre interview avec Mme Letourneur, pharmacienne hospitalière en charge du groupement d’achat de
         médicaments, elle nous explique la chose suivante :
       </p>
-      <audio controls src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/Swing_Jazz_Drum.mp3">
+      <audio controls src="/audio/impact_environnemental_delocalisation.mp3">
         Your browser does not support the
         <code>audio</code> element.
       </audio>
@@ -78,7 +78,7 @@ export default function Enjeux() {
         indispensable pour garantir un meilleur accès pour les patients aux innovations de demain. Cela nous permettrait
         également de renforcer notre indépendance sanitaire .
       </p>
-      <audio controls src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/Swing_Jazz_Drum.mp3">
+      <audio controls src="/audio/biomedicaments.mp3">
         Your browser does not support the
         <code>audio</code> element.
       </audio>
@@ -102,7 +102,7 @@ export default function Enjeux() {
         hydroalcoolique. De ce fait, l’Agence Nationale de Sécurité du Médicament (ANSM) les a autorisé à créer leur
         propre solution désinfectante.
       </p>
-      <audio controls src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/Swing_Jazz_Drum.mp3">
+      <audio controls src="/audio/autorisation_ANSM2.mp3">
         Your browser does not support the
         <code>audio</code> element.
       </audio>
@@ -121,7 +121,7 @@ export default function Enjeux() {
         utiliser des médicaments plus anciens dont les méthodes d’administration diffère de ceux employés actuellement.
         Les médecins sont donc dans l’obligation de s’adapter et d’utiliser des produits de substitution.
       </p>
-      <audio controls src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/Swing_Jazz_Drum.mp3">
+      <audio controls src="/audio/produits_de_substitution2.mp3">
         Your browser does not support the
         <code>audio</code> element.
       </audio>
@@ -147,7 +147,7 @@ export default function Enjeux() {
         production sur le territoire français. Néanmoins, cette solution n’est envisageable uniquement si le
         gouvernement français propose des aides et une diminution des réglementations. Voici son avis personnel :
       </p>
-      <audio controls src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/355309/Swing_Jazz_Drum.mp3">
+      <audio controls src="/audio/avis_relocalisation_modif.mp3">
         Your browser does not support the
         <code>audio</code> element.
       </audio>
