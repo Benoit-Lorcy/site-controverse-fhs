@@ -710,3 +710,14 @@ iframe{
 audio::-webkit-media-controls-panel {
   background-color: white;
 }
+
+/* fix */
+
+.container.apropos p{
+  margin-bottom: 10px;
+}
+
+.container.apropos p a{
+  color: var(--primary-color);
+  text-decoration: underline;
+}

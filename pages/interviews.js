@@ -119,9 +119,12 @@ export default function Interviews({ props }) {
       <div className="interview-card">
         <img className="interview-card-image" srcSet="/images/interview_avatar_3.png 2x"></img>
         <ul>
-          <li>Nom : Tiphaine Elombo</li>
-          <li>Status : Pharmacienne et ingénieure chimiste chez EUROAPI </li>
-          <li>Description : Gestion d’un atelier de production </li>
+          <li>Nom : Sébastien F.</li>
+          <li>Status : Pharmacien en officine</li>
+          <li>
+            Description : Interview de Sébastien, pharmacien adjoint de la pharmacie Blanchard Serarl, située dans la
+            galerie commerciale du quartier de Bellevue, à Brest.
+          </li>
         </ul>
       </div>
       <p className="quote">“Nous sommes quotidiennement confrontés à des pénuries de médicaments.”</p>

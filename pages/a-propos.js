@@ -52,16 +52,24 @@ export default function Apropos() {
         </div>
       </section>
       <section className="section" id="who">
-        <div className="container">
+        <div className="container apropos">
           <h2>Qui sommes nous ?</h2>
+          <p>Nous sommes un groupe de six étudiants en école d’ingénieur à l’ISEN de Brest.</p>{" "}
           <p>
-            Nous sommes un groupe de six étudiants en école d’ingénieur à l’ISEN de Brest. Nous avons créé ce site à la
-            suite d’un travail de controverse réalisé au cours de notre troisième année. Cela entre dans le cadre de
-            notre Formation Humaine Economique et Sociale (FHES). Nous avons choisi de travailler sur la controverse
-            qu’engendre la relocalisation des entreprises pharmaceutiques sur le territoire français. Nous avons tâché,
-            tout au long de ce projet, de répondre à la question : “ Dans quelles mesures la délocalisation de la
-            production pharmaceutique est-elle soutenable ? “ Ce site internet retranscrit de façon ludique et imagée
-            notre travail.
+            Nous avons créé ce site à la suite d’un travail de controverse réalisé au cours de notre troisième année.
+            Cela entre dans le cadre de notre Formation Humaine Economique et Sociale (FHES).
+          </p>{" "}
+          <p>
+            Nous avons choisi de travailler sur la controverse qu’engendre la relocalisation des entreprises
+            pharmaceutiques sur le territoire français. Nous avons tâché, tout au long de ce projet, de répondre à la
+            question : “ Dans quelles mesures la délocalisation de la production pharmaceutique est-elle soutenable ?
+          </p>{" "}
+          <p>Ce site internet retranscrit de façon ludique et imagée notre travail.</p>{" "}
+          <p>
+            Si ce sujet de controverse vous a intéressé, jetez un coup d’oeil à notre rapport :{" "}
+            <a href="https://cdn.fbsbx.com/v/t59.2708-21/271809006_670121164003395_4610183971420817930_n.pdf/Controverse-relocalisation-production-pharmaceutique.pdf?_nc_cat=104&ccb=1-5&_nc_sid=0cab14&_nc_ohc=Yv0lJeknizgAX9t1E1h&_nc_ht=cdn.fbsbx.com&oh=03_AVKLtNie6Eolsn1pLDh31f2VO98jyhRtQTEL6fZp68fOcg&oe=621E7627&dl=1">
+              lien de téléchargement
+            </a>
           </p>
         </div>
       </section>
