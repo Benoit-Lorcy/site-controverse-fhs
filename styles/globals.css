@@ -120,7 +120,7 @@ audio{
   margin-top : -80px;
   width: 100%;
   height: 800px;
-  background-image: -webkit-image-set( url("../public/images/hero-background.jpg") 2x);
+  background-image: -webkit-image-set( url("/images/hero-background.jpg") 2x);
   background-size: cover;
 }
 
